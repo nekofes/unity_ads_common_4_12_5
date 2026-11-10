@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        >
+    <TextView
+        android:id="@+id/bk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateClickableBoundsCheck" />
+    </RelativeLayout>
+
+    <!--
+    unity ads広告コントロールを表示するための
+    共通コントロールのタグです
+    パッケージ名 + UnityAds
+    この例では
+    com.test.unityadcommon.UnityAds
+    となります
+    -->
+    <com.test.unityadcommon.UnityAds
+        android:id="@+id/unityAdsView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
